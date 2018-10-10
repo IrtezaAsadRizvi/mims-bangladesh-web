@@ -1,0 +1,61 @@
+/* --------------------------------------------- */
+/* navigation */
+/* --------------------------------------------- */
+
+/* bootstrap modification */
+.navbar {
+  position: relative;
+  background-color: #d8dce1;
+}
+.navbar-brand-centered {
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 54px);
+}
+
+/* custom style */
+.navbar-container {
+  max-width: 910px;
+}
+#logo {
+  height: 40px;
+  width: auto;
+}
+.mims-nav-link {
+  text-transform: uppercase;
+  color: #3d3d3d !important;
+  font-weight: 400;
+}
+.mims-nav-link.active { 
+  color: #009b3e !important;
+}
+.left-links {
+  position: absolute;
+  top: 10px;
+  left: 24px;
+}
+.right-links {
+  position: absolute;
+  top: 10px;
+  right: 24px;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    display: block !important;
+  }
+  .navbar-brand-centered {
+    top: 10px;
+    left: calc(50% - 33px);
+  }
+  #logo {
+    height: 24px;
+  }
+  .left-links, .right-links {
+    position: relative;
+    left: 0;
+    right: 0;
+    display: inline-block;
+  }
+}
