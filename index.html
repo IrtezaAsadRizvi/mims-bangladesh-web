@@ -9,6 +9,7 @@
 		<!-- CDN -->
 		<!-- stylesheets -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 		<!-- scripts -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -18,6 +19,7 @@
 		<!-- Custom -->
 		<!-- stylesheets -->
 		<link rel="stylesheet" href="./css/base.css">
+		<link rel="stylesheet" href="./fonts/fonts.min.css">
 
 		<!-- scripts -->
 		<script src="./js/ui.js"></script>
@@ -25,8 +27,8 @@
 	<body>
 			<!-- navigation -->
       <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
+					<button class="navbar-toggler menu-btn no-outline" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="fas fa-bars"></i>
 					</button>
 
 					<a class="navbar-brand-centered" href="#">
@@ -37,32 +39,75 @@
 						<div class="container d-flex justify-content-between navbar-container">
 								<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 										<li class="nav-item">
-											<a class="nav-link mims-nav-link active" href="#">Home</a>
+											<a class="nav-link mims-nav-link home active" href="#">Home</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link mims-nav-link" href="#">Doctor</a>
+											<a class="nav-link mims-nav-link doctor" href="#">Doctor</a>
 										</li>
 									</ul>
 									<ul class="navbar-nav">
 										<li class="nav-item">
-											<a class="nav-link mims-nav-link" href="#">Resources</a>
+											<a class="nav-link mims-nav-link resources" href="#">Resources</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link mims-nav-link" href="#">About Us</a>
+											<a class="nav-link mims-nav-link about" href="#">About Us</a>
 										</li>
 									</ul>
 									<div class="left-links">
-										<a href="">fb</a>
-										<a href="">fb</a>
-										<a href="">fb</a>
-										<a href="">fb</a>
+										<a href="#" class="side-link"><i class="fab fa-facebook-square"></i></a>
+										<a href="#" class="side-link"><i class="fab fa-twitter-square"></i></a>
+										<a href="#" class="side-link"><i class="fab fa-linkedin"></i></a>
+										<a href="#" class="side-link"><i class="fab fa-google-plus-square"></i></a>
 									</div>
 									<div class="right-links">
-										<a href="">fb</a>
+										<a href="#" class="side-link"><i class="fas fa-user-circle"></i></a>
 									</div>
 						</div>
 					</div>
-				
 				</nav>
+
+			<!-- banner -->
+			<div class="banner d-md-flex d-none">
+				<div class="search-wrapper">
+					<ul class="search-tabs group">
+						<li class="active"><a href="#one">Brand</a></li>
+						<li><a href="#two">Generic</a></li>
+						<li><a href="#three">Indication</a></li>
+						<li><a href="#three">Manufacture</a></li>
+					</ul>
+					<div class="search">
+						<input class="search-bar no-outline" type="text" id="search">
+						<button class="search-btn no-outline"><img src="./images/icons/magnifying-glass.svg" class="search-icon" alt=""></button>
+					</div>
+					<div class="alphabets">
+						<a href="#" class="alphabet-link">A</a>
+						<a href="#" class="alphabet-link">B</a>
+						<a href="#" class="alphabet-link">C</a>
+						<a href="#" class="alphabet-link">D</a>
+						<a href="#" class="alphabet-link">E</a>
+						<a href="#" class="alphabet-link">F</a>
+						<a href="#" class="alphabet-link">G</a>
+						<a href="#" class="alphabet-link">H</a>
+						<a href="#" class="alphabet-link">I</a>
+						<a href="#" class="alphabet-link">J</a>
+						<a href="#" class="alphabet-link">K</a>
+						<a href="#" class="alphabet-link">L</a>
+						<a href="#" class="alphabet-link">M</a>
+						<a href="#" class="alphabet-link">N</a>
+						<a href="#" class="alphabet-link">O</a>
+						<a href="#" class="alphabet-link">P</a>
+						<a href="#" class="alphabet-link">Q</a>
+						<a href="#" class="alphabet-link">R</a>
+						<a href="#" class="alphabet-link">S</a>
+						<a href="#" class="alphabet-link">T</a>
+						<a href="#" class="alphabet-link">U</a>
+						<a href="#" class="alphabet-link">V</a>
+						<a href="#" class="alphabet-link">W</a>
+						<a href="#" class="alphabet-link">X</a>
+						<a href="#" class="alphabet-link">Y</a>
+						<a href="#" class="alphabet-link">Z</a>
+					</div>
+				</div>
+			</div>
 	</body>
 </html>
