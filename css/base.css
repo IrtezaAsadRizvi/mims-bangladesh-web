@@ -12,6 +12,7 @@
   /* color */
   --brand-color: #009b3e;
   --theme-color-primary: #3fb93b;
+  --theme-color-dark: #005335;
   --title-color: #191d20;
   --sub-title-color: #585858;
   --text-color: #868686;
@@ -734,6 +735,46 @@ body {
   }
   .address {
     margin: 7px 0px 7px 0px;
+  }
+}
+
+/* --------------------------------------------- */
+/* bottom quote section */
+/* --------------------------------------------- */
+.bottom-quote-secton {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+.quote img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  position: relative;
+}
+.visitor {
+  position: absolute;
+  top: 36px;
+  left: 150px;
+}
+.visitor p {
+  text-transform: uppercase;
+  color: var(--sub-title-color);
+  font-size: 15px;
+  margin: 0;
+}
+.visitor .visitor-count {
+  color: var(--theme-color-dark);
+  font-family: var(--font-bold);
+  font-size: 32px;
+  line-height: 0.9em;
+}
+
+@media screen and (max-width: 768px) {
+  .bottom-quote-secton {
+    margin-top: 0px;
+  }
+  .quote {
+    margin-bottom: 16px;
   }
 }
 
