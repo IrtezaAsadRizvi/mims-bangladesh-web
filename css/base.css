@@ -302,6 +302,7 @@ body {
   .home-product-slider-container {
     margin-top: 10px;
     padding: 10px 0;
+    height: 126px;
   }
   .home-product-slider-wrapper {
     position: relative;
@@ -411,7 +412,7 @@ body {
     margin-bottom: 0;
   }
   .section-col {
-    border-top: 1px solid var(--light-border-color);
+    border-bottom: 1px solid var(--light-border-color);
     padding: 0;
     padding-bottom: 50px;
   }
