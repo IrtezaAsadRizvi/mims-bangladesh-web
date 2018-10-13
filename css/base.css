@@ -511,6 +511,9 @@ body {
   cursor: pointer;
   position: relative;
 }
+.job.side-col {
+  padding: 10px;
+}
 .job .right-arrow {
   display: none;
   height: 28px;
@@ -529,10 +532,17 @@ body {
   border-bottom: none;
   padding: 10px 24px;
 }
+.job:last-child.side-col {
+  padding: 10px;
+}
 .job-img {
   height: 62px;
   width: 62px;
   margin: 0 auto;
+}
+.job-img.side-col {
+  height: auto; 
+  width: 100%;
 }
 .job-title {
   font-size: var(--font-size-medium);
@@ -540,6 +550,9 @@ body {
   color: var(--title-color);
   margin-bottom: 3px;
   margin-top: 5px;
+}
+.job-title.side-col {
+  font-size: 16px
 }
 .job-company {
   color: var(--text-color);
@@ -595,6 +608,10 @@ body {
   color: var(--title-color);
   margin-bottom: 3px;
   margin-top: 0;
+}
+.news-title.side-col {
+  font-size: 18px;
+  font-family: var(--font-bold);
 }
 .news-description {
   color: var(--text-color);
