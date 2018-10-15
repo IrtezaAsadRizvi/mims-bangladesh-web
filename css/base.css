@@ -54,6 +54,11 @@ body {
 .bb-lighter {
   border-bottom: 1px solid var(--lighter-border-color);
 }
+.theme-btn {
+  background-color: var(--theme-color-primary);
+  color: var(--text-color-white);
+  border: none;
+}
 
 /* --------------------------------------------- */
 /* navigation */
@@ -104,9 +109,28 @@ body {
   font-size: var(--font-size-medium);
   margin: 0 3px;
 }
+#navbarSearch {
+  position: absolute;
+}
+#navbarSearch .navbar-search {
+  display: none !important;
+  margin: 24px 10px 10px 10px;
+}
+#navbarSearch .search-category-radio {
+  margin: 10px 0px;
+}
+#navbarSearch .custom-radio .custom-control-input:checked~.custom-control-label::before {
+  background-color: var(--theme-color-primary)
+}
 
 /* responsive */
 @media screen and (max-width: 768px) {
+  #navbarSearch {
+    position: relative;
+  }
+  #navbarSearch .navbar-search {
+    display: block !important;
+  }
   .navbar-container {
     display: block !important;
   }

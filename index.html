@@ -37,8 +37,8 @@
 <body>
 	<!-- navigation -->
 	<nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-		<button class="navbar-toggler menu-btn no-outline" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-		 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler menu-btn no-outline" type="button" data-toggle="collapse" data-target="#navbarMenu"
+		 aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation" id="navbarMenuButton">
 			<i class="fas fa-bars"></i>
 		</button>
 
@@ -46,7 +46,12 @@
 			<img id="logo" src="./images/green-logo.png" alt="">
 		</a>
 
-		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+		<button class="navbar-toggler menu-btn no-outline" type="button" data-toggle="collapse" data-target="#navbarSearch"
+		 aria-controls="navbarSearch" aria-expanded="false" aria-label="Toggle navigation" id="navbarSearchButton">
+		 	<i class="fas fa-search"></i>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarMenu">
 			<div class="container d-flex justify-content-between navbar-container">
 				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 					<li class="nav-item">
@@ -72,6 +77,34 @@
 				</div>
 				<div class="right-links">
 					<a href="#" class="side-link"><i class="fas fa-user-circle"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="collapse navbar-collapse" id="navbarSearch">
+			<div class="navbar-search">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Search">
+					<div class="input-group-append">
+						<button class="btn theme-btn" type="button"><i class="fas fa-search"></i></button>
+					</div>
+				</div>
+				<div class="search-category-radio">
+						<div class="custom-control custom-radio">
+								<input type="radio" id="brand" name="search-category" class="custom-control-input" checked>
+								<label class="custom-control-label" for="brand">Brand</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="generic" name="search-category" class="custom-control-input">
+								<label class="custom-control-label" for="generic">Generic</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="indication" name="search-category" class="custom-control-input">
+								<label class="custom-control-label" for="indication">Indication</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="manufacture" name="search-category" class="custom-control-input">
+								<label class="custom-control-label" for="manufacture">Manufacture</label>
+							</div>
 				</div>
 			</div>
 		</div>
