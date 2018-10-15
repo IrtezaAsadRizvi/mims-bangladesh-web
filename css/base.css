@@ -17,6 +17,7 @@
   --sub-title-color: #585858;
   --text-color: #868686;
   --text-color-white: #ffffff;
+  --text-color-light-gray: #9b9b9b;
 
   --body-bg: #f1f1f1;
   --section-bg: #ffffff;
@@ -50,6 +51,7 @@ body {
 /* --------------------------------------------- */
 .no-outline:focus, .no-outline:active {
   outline: none;
+  box-shadow: none;
 }
 .bb-lighter {
   border-bottom: 1px solid var(--lighter-border-color);
@@ -163,6 +165,30 @@ body {
   }
 }
 
+/* --------------------------------------------- */
+/* bread crumb */
+/* --------------------------------------------- */
+.bread-crumb a {
+  color: var(--theme-color-primary);
+  font-size: var(--font-size-text);
+  font-family: var(--font-regular);
+}
+.bread-crumb a i {
+  color: var(--text-color);
+  font-size: 8px;
+  position: relative;
+  top: -1px;
+  margin: 0 5px;
+}
+.bread-crumb a:last-child {
+  color: var(--text-color);
+  font-size: var(--font-size-text);
+  text-transform: uppercase;
+  pointer-events: none;
+}
+.bread-crumb a:last-child i {
+  display: none;
+}
 
 /* --------------------------------------------- */
 /* banner */
@@ -177,6 +203,14 @@ body {
   background-position: bottom center;
   background-color: var(--seconday-bg);
   background-size: cover;
+}
+.title-banner {
+  height: 199px;
+}
+.title-banner h2 {
+  font-family: var(--font-regular);
+  text-transform: uppercase;
+  color: var(--text-color-white);
 }
 .banner.banner-small {
   height: 220px;
@@ -867,6 +901,125 @@ body {
   }
   .brand-generic-table td {
     font-size: var(--font-size-text)
+  }
+}
+
+/* --------------------------------------------- */
+/* job details */
+/* --------------------------------------------- */
+.job-details {
+  padding: 16px 30px;
+}
+.job-details .job-title {
+  font-size: 30px;
+  font-family: var(--font-regular);
+  margin-bottom: 12px;
+} 
+.job-details .job-post-date {
+  font-size: var(--font-size-text);
+  color: var(--text-color-light-gray);
+  font-family: var(--font-medium);
+  margin-bottom: 12px;
+}
+.job-details .job-post-date span {
+  color: var(--title-color);
+}
+.job-details .job-description {
+  color: var(--title-color);
+  font-size: var(--font-size-text);
+}
+.job-info-table td {
+  border: none !important;
+  font-size: var(--font-size-text);
+  text-align: left;
+  padding: 7px 0;
+}
+.job-info-table td.job-info-title {
+  color: var(--title-color);
+  font-family: var(--font-medium);
+}
+.job-details .job-circular-image {
+  text-align: center;
+}
+.job-details .job-circular-image img {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.job-details .job-circular-image button {
+  background: none;
+  color: var(--text-color);
+}
+.job-details .job-circular-image button i {
+  font-size: 16px;
+  position: relative;
+  top: 3px;
+}
+@media screen and (max-width: 768px) {
+  .job-details .job-title {
+    font-size: var(--font-size-medium);
+    font-family: var(--font-medium);
+    margin-bottom: 12px;
+  }
+  .job-details .job-circular-image-wrapper {
+    padding: 0;
+  }
+  .job-details .job-circular-image img {
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+
+/* --------------------------------------------- */
+/* job list */
+/* --------------------------------------------- */
+.job-list {
+  padding: 16px 30px;
+}
+.job-list .job {
+  margin-bottom: 20px;
+  border: none;
+}
+.job-list .job-title {
+  font-size: 24px;
+  font-family: var(--font-regular);
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+} 
+.job-list .job-post-date {
+  font-size: var(--font-size-text);
+  color: var(--text-color-light-gray);
+  font-family: var(--font-medium);
+  margin-bottom: 12px;
+}
+.job-list .job-post-date span {
+  color: var(--title-color);
+}
+.job-list .job-description {
+  color: var(--title-color);
+  font-size: var(--font-size-text);
+  margin-bottom: 12px;
+}
+.job-list .job-img {
+  float: right;
+  height: 115px;
+  width: 115px;
+}
+.job-list .job-detail-btn {
+  color: var(--text-color);
+  font-family: var(--font-medium);
+}
+@media screen and (max-width: 768px) {
+  .job-list .job-title {
+    font-size: var(--font-regular);
+    font-family: var(--font-medium);
+  } 
+  .job-list .job-img {
+    height: 60px;
+    width: 60px;
   }
 }
 
