@@ -65,6 +65,70 @@ body {
 }
 
 /* --------------------------------------------- */
+/* custom elements */
+/* --------------------------------------------- */
+/* theme select */
+.theme-select {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.theme-select select {
+  padding: 12px 20px; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  padding-right: 36px;
+  width: 100%;
+  border: 1px solid var(--lighter-border-color);
+  border-radius: 4px;
+}
+.theme-select select::placeholder {
+  color: var(--text-color-light-gray);
+}
+.theme-select .theme-down-arrow {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  pointer-events: none;
+}
+.theme-select .theme-down-arrow i {
+  font-size: 10px;
+  color: var(--text-color-light-gray);
+}
+@media screen and (max-width: 768px) {
+  .theme-select select {
+    padding: 10px 16px; 
+    border: 1px solid var(--light-border-color);
+  }
+}
+/* theme input */
+.theme-input {
+  padding: 12px 20px; 
+  border: 1px solid var(--lighter-border-color);
+  border-radius: 4px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .theme-input {
+    padding: 10px 16px; 
+    border: 1px solid var(--light-border-color);
+  }
+}
+/* theme button */
+.theme-btn {
+  background: var(--theme-color-primary);
+  color: var(--text-color-white);
+  padding: 12px 10px;
+  font-family: var(--font-bold);
+}
+@media screen and (max-width: 768px) {
+  .theme-btn {
+    padding: 10px 16px; 
+  }
+}
+/* --------------------------------------------- */
 /* navigation */
 /* --------------------------------------------- */
 
@@ -1059,6 +1123,134 @@ body {
   .job-list .job-img {
     height: 60px;
     width: 60px;
+  }
+}
+
+
+/* --------------------------------------------- */
+/* Address Search */
+/* --------------------------------------------- */
+.address-search {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+.address-search-col {
+  padding-left: 0; 
+  padding-right: 10px;
+}
+.address-search-col:last-child {
+  padding-left: 0; 
+  padding-right: 0;
+}
+.address-search-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  font-family: var(--font-medium);
+  color: var(--text-color);
+}
+.search-tag {
+  border: 1px solid var(--light-border-color);
+  padding: 10px;
+  border-radius: 16px;
+  font-size: var(--font-size-text);
+  color: var(--text-color);
+  cursor: pointer;
+}
+.search-tag:hover, .search-tag:focus, .search-tag:active {
+  border: 1px solid var(--theme-color-primary);
+}
+.address-search-filter-dropdown {
+  display: inline-block;
+}
+.address-search-filter-dropdown button {
+  padding: 8px 24px 8px 10px;
+  border-radius: 16px;
+  font-size: var(--font-size-text);
+  position: relative;
+  color: var(--text-color);
+  background-color: #ebebeb;
+}
+.address-search-filter-dropdown button::after {
+  display: none;
+}
+.address-search-filter-dropdown button .theme-down-arrow {
+  position: absolute;
+  right: 8px;
+  top: 10px;
+  font-size: 10px;
+}
+@media screen and (max-width: 768px) { 
+  .address-search {
+    padding: 10px 16px;
+  }
+  .address-search-col {
+    padding-left: 0px; 
+    padding-right: 0px;
+    margin-bottom: 10px;
+  }
+  .address-search-filters {
+    display: none;
+    padding: 0;
+    padding-bottom: 15px;
+    font-family: var(--font-medium);
+    color: var(--text-color);
+    overflow: auto;
+  }
+  .search-tag {
+    border: 1px solid var(--text-color);
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: var(--font-size-small);
+  }
+}
+
+/* --------------------------------------------- */
+/* Address table */
+/* --------------------------------------------- */
+.address-table {
+  padding: 30px;
+}
+.address-table table th {
+  text-transform: uppercase;
+  color: var(--sub-title-color);
+  font-size: var(--font-size-text);
+  font-family: var(--font-medium);
+  border: none;
+  border-bottom: 1px solid var(--lighter-border-color);
+}
+.address-table table td {
+  border: none;
+  color: var(--title-color);
+  font-size: var(--font-size-text);
+  border-bottom: 1px solid var(--lighter-border-color);
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.address-table table tr:last-child td {
+  border: none;
+  color: var(--title-color);
+  font-size: var(--font-size-text);
+  border-bottom: none;
+}
+.view-more-address-btn button {
+  color: var(--text-color);
+}
+.view-more-address-btn button i {
+  font-size: 10px;
+}
+.view-more-address-btn button:hover, .view-more-address-btn button:active {
+  text-decoration: none;
+  color: var(--sub-title-color);
+}
+@media screen and (max-width: 768px) { 
+  .address-table {
+    padding: 16px;
+  }
+  .address-table table th {
+    width: auto !important;
   }
 }
 
