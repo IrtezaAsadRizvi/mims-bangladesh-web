@@ -499,6 +499,9 @@ body {
   margin-bottom: 0px;
   padding: 10px;
 }
+.section-header.drug-update-header {
+  margin-bottom: 24px;
+}
 .section-header.own-pad {
   padding: 30px 30px 10px 30px;
 }
@@ -555,15 +558,19 @@ body {
     padding: 16px;
     margin-bottom: 0;
   }
+  .section-header.drug-update-header {
+    margin-bottom: 0px;
+  }
   .section-col {
     border-bottom: 1px solid var(--light-border-color);
     padding: 0;
     padding-bottom: 50px;
   }
   .section-col h4 {
-    margin-bottom: 10px;
-    text-align: center;
-    padding: 10px;
+    margin-bottom: 10px !important;
+    text-align: left;
+    padding: 16px;
+    margin-top: 16px;
   }
   .section-col p {
     margin-bottom: 6px;
@@ -577,6 +584,7 @@ body {
     text-align: center;
     font-family: var(--font-medium);
     color: var(--text-color);
+    margin-bottom: 16px;
   }
 }
 
