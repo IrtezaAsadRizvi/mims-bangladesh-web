@@ -1202,6 +1202,21 @@ body {
 #seachFilterCollapse {
   padding: 0 16px 16px 16px;
 }
+@media screen and (max-width: 1400px) { 
+  .address-search-filters  {
+    padding: 16px 16px;
+  }
+  .search-tag {
+    padding: 8px 5px;
+    font-size: var(--font-size-small);
+    margin: 5px 0px 5px 0;
+  }
+  .address-search-filter-dropdown button {
+    padding: 8px 24px 8px 10px;
+    font-size: var(--font-size-small);
+    top: -1px;
+  }
+}
 @media screen and (max-width: 768px) { 
   .address-search {
     padding: 10px 16px;
