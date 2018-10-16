@@ -120,10 +120,11 @@
         <div class="row">
             <div class="col-md-8 col-12">
                 <div class="content-section main">
-                  <div class="section-header" style="margin-bottom: 0px; padding: 24px 30px 16px 30px;">
-                      Find Address
+                  <div class="section-header d-flex justify-content-between" style="margin-bottom: 0px; padding: 24px 30px 16px 30px;">
+                      <span>Find Address</span> <i class="fas fa-filter  d-md-none d-blocK"></i>
                   </div>
                   <div class="container">
+                    <!-- address search -->
                     <div class="address-search row">
                       <div class="col-md-5 col-12 address-search-col">
                         <div class="theme-select">
@@ -148,6 +149,7 @@
                           <button class="btn theme-btn" style="width: 100%;">Search</button>
                       </div>
                     </div>
+                    <!-- use "selected" class on the selected items -->
                     <div class="address-search-filters">
                       <span>Filter: </span>
                       <span class="search-tag">24 Hours Pharmacy</span>
@@ -155,18 +157,27 @@
                       <span class="search-tag">Blood Bank</span>
                       <span class="search-tag">Cancer Hospital</span>
                       <div class="dropdown address-search-filter-dropdown">
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="collapse" data-target="#seachFilterCollapse" aria-expanded="false" aria-controls="collapseExample">
                           View All 
                           <div class="theme-down-arrow">
                             <i class="fas fa-chevron-down"></i>
                           </div>
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
                       </div>
+                    </div>
+                    <div class="collapse" id="seachFilterCollapse" class="more-search-filters">
+                        <span class="search-tag">24 Hours Pharmacy</span>
+                        <span class="search-tag">Ambulance Service</span>
+                        <span class="search-tag">Blood Bank</span>
+                        <span class="search-tag">Cancer Hospital</span>
+                        <span class="search-tag">24 Hours Pharmacy</span>
+                        <span class="search-tag">Ambulance Service</span>
+                        <span class="search-tag">Blood Bank</span>
+                        <span class="search-tag">Cancer Hospital</span>
+                        <span class="search-tag">24 Hours Pharmacy</span>
+                        <span class="search-tag">Ambulance Service</span>
+                        <span class="search-tag">Blood Bank</span>
+                        <span class="search-tag">Cancer Hospital</span>
                     </div>
                   </div>
                 </div>
@@ -254,45 +265,45 @@
                 <div class="row">
                   <!-- job circular -->
                   <div class="content-section col-12" style="padding: 0; height: auto; max-height: none;">
-                    <div class="section-header own-pad" style="margin-bottom: 10px;">
+                    <div class="section-header own-pad">
                         <span><img src="./images/icons/briefcase.svg" alt="*"></span>Job Circular
                     </div>
                     <div class="container">
                         <div class="row job side-col">
-                            <div class="col-2" style="padding: 7px">
+                            <div class="col-3" style="padding: 7px">
                                 <img class="job-img side-col" src="./images/job-img-1.jpg" alt="">
                             </div>
-                            <div class="col-10" style="padding-right: 0; padding-left: 10px">
+                            <div class="col-9" style="padding-right: 0; padding-left: 10px">
                                 <p class="job-title side-col">Analytical Research & Deve..</p>
                                 <p class="job-company">Square Pharmaceuticals Ltd.</p>
                             </div>
                             <!-- <img class="right-arrow" src="./images/icons/right-arrow.svg" alt=">"> -->
                         </div>
                         <div class="row job side-col">
-                            <div class="col-2" style="padding: 7px">
+                            <div class="col-3" style="padding: 7px">
                                 <img class="job-img side-col" src="./images/job-img-2.jpg" alt="">
                             </div>
-                            <div class="col-10" style="padding-right: 0; padding-left: 10px">
+                            <div class="col-9" style="padding-right: 0; padding-left: 10px">
                                 <p class="job-title side-col">Medical Promotion Officer (MPO)</p>
                                 <p class="job-company">Drug International Limited.</p>
                             </div>
                             <!-- <img class="right-arrow" src="./images/icons/right-arrow.svg" alt=">"> -->
                         </div>
                         <div class="row job side-col">
-                            <div class="col-2" style="padding: 7px">
+                            <div class="col-3" style="padding: 7px">
                                 <img class="job-img side-col" src="./images/job-img-3.jpg" alt="">
                             </div>
-                            <div class="col-10" style="padding-right: 0; padding-left: 10px">
+                            <div class="col-9" style="padding-right: 0; padding-left: 10px">
                                 <p class="job-title side-col">IBN SINA Pharmaceutical Industry Ltd</p>
                                 <p class="job-company">IBN SINA Pharmaceutical Industry</p>
                             </div>
                             <!-- <img class="right-arrow" src="./images/icons/right-arrow.svg" alt=">"> -->
                         </div>
                         <div class="row job side-col">
-                            <div class="col-2" style="padding: 7px">
+                            <div class="col-3" style="padding: 7px">
                                 <img class="job-img side-col" src="./images/job-img-4.jpg" alt="">
                             </div>
-                            <div class="col-10" style="padding-right: 0; padding-left: 10px">
+                            <div class="col-9" style="padding-right: 0; padding-left: 10px">
                                 <p class="job-title side-col">Analytical Research & Development</p>
                                 <p class="job-company">Square Pharmaceuticals Ltd.</p>
                             </div>
@@ -304,7 +315,7 @@
                 <div class="row">
                   <!-- local news -->
                   <div class="content-section col-12" style="padding: 0; height: auto; max-height: none;">
-                    <div class="section-header own-pad" style="margin-bottom: 16px;">
+                    <div class="section-header own-pad">
                       <span><img src="./images/icons/newspaper.svg" alt="*"></span>Local News
                     </div>
                     <div class="container">
@@ -336,7 +347,7 @@
                 <div class="row">
                   <!-- special reports -->
                   <div class="content-section col-12" style="padding: 0; height: auto; max-height: none;">
-                    <div class="section-header own-pad" style="margin-bottom: 16px;">
+                    <div class="section-header own-pad">
                       <span><img src="./images/icons/newspaper.svg" alt="*"></span>Special Reports
                     </div>
                     <div class="container">

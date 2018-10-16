@@ -51,10 +51,12 @@ $(function() {
 	 ]
 	});
 
-	// don't ever scroll sideways (probably won't need in production)
-	var scrollEventHandler = function()
-	{
-		window.scroll(0, window.pageYOffset)
-	}
-	window.addEventListener("scroll", scrollEventHandler, false);
+	// image viewer
+	var viewer = ImageViewer();
+	$('.gallery-items').click(function () {
+		var imgSrc = this.src,
+				highResolutionImage = $(this).data('high-res-img');
+
+		viewer.show(imgSrc, highResolutionImage);
+	});
 });

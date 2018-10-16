@@ -63,6 +63,9 @@ body {
   color: var(--text-color-white);
   border: none;
 }
+.gallery-items {
+  cursor: zoom-in;
+}
 
 /* --------------------------------------------- */
 /* custom elements */
@@ -90,7 +93,7 @@ body {
 .theme-select .theme-down-arrow {
   position: absolute;
   right: 16px;
-  top: 16px;
+  top: 12px;
   pointer-events: none;
 }
 .theme-select .theme-down-arrow i {
@@ -493,7 +496,7 @@ body {
   font-family: var(--font-medium);
   color: var(--title-color);
   font-size: var(--font-size-header);
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding: 10px;
 }
 .section-header.own-pad {
@@ -654,7 +657,10 @@ body {
   position: relative;
 }
 .job.side-col {
-  padding: 10px;
+  padding: 10px 20px;
+}
+.job.side-col .job-title {
+  font-size: var(--font-size-medium);
 }
 .job .right-arrow {
   display: none;
@@ -714,6 +720,9 @@ body {
   .job-title {
     font-size: var(--font-size-regular);
     font-family: var(--font-bold);
+  }
+  .job.side-col .job-title {
+    font-size: var(--font-size-regular);
   }
   .job-company {
     font-size: var(--font-size-regular);
@@ -807,16 +816,17 @@ body {
   height: 46px;
   width: 46px;
   border-radius: 50%;
-  top: calc(50%-26px);
   opacity: 1;
   background-size: contain;
   background-position: top center;
 }
 .slick-prev.slick-arrow {
   left: -46px;
+  top: 69px;
 }
 .slick-next.slick-arrow {
   right: -22px;
+  top: 69px;
 }
 .slick-prev.slick-arrow:before {
   background-image: url('../images/icons/left-arrow-white.png');
@@ -957,6 +967,7 @@ body {
   color: var(--sub-title-color);
   text-transform: uppercase;
   border: none !important;
+  font-family: var(--font-bold);
 }
 .brand-generic-table td {
   border: none;
@@ -1020,11 +1031,11 @@ body {
   border-radius: 10px;
   margin-bottom: 20px;
 }
-.job-details .job-circular-image button {
+.job-details .job-circular-image a {
   background: none;
   color: var(--text-color);
 }
-.job-details .job-circular-image button i {
+.job-details .job-circular-image a i {
   font-size: 16px;
   position: relative;
   top: 3px;
@@ -1051,7 +1062,7 @@ body {
   padding: 16px 30px;
 }
 .job-list .job {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   border: none;
 }
 .job-list.job-list-page {
@@ -1152,24 +1163,30 @@ body {
   color: var(--text-color);
 }
 .search-tag {
+  display: inline-block;
   border: 1px solid var(--light-border-color);
   padding: 10px;
-  border-radius: 16px;
+  border-radius: 24px;
   font-size: var(--font-size-text);
   color: var(--text-color);
   cursor: pointer;
+  margin: 0px 0px 5px 0;
 }
 .search-tag:hover, .search-tag:focus, .search-tag:active {
+  border: 1px solid var(--theme-color-primary);
+}
+.search-tag.selected {
   border: 1px solid var(--theme-color-primary);
 }
 .address-search-filter-dropdown {
   display: inline-block;
 }
 .address-search-filter-dropdown button {
-  padding: 8px 24px 8px 10px;
-  border-radius: 16px;
+  padding: 9px 24px 9px 10px;
+  border-radius: 24px;
   font-size: var(--font-size-text);
   position: relative;
+  top: -3px;
   color: var(--text-color);
   background-color: #ebebeb;
 }
@@ -1178,9 +1195,12 @@ body {
 }
 .address-search-filter-dropdown button .theme-down-arrow {
   position: absolute;
-  right: 8px;
-  top: 10px;
+  right: 10px;
+  top: 12px;
   font-size: 10px;
+}
+#seachFilterCollapse {
+  padding: 0 16px 16px 16px;
 }
 @media screen and (max-width: 768px) { 
   .address-search {
@@ -1217,7 +1237,7 @@ body {
   text-transform: uppercase;
   color: var(--sub-title-color);
   font-size: var(--font-size-text);
-  font-family: var(--font-medium);
+  font-family: var(--font-bold);
   border: none;
   border-bottom: 1px solid var(--lighter-border-color);
 }
@@ -1258,7 +1278,7 @@ body {
 /* pagination */
 /* --------------------------------------------- */
 .mims-pagination {
-  margin-top: 30px;
+  margin-top: 16px;
 }
 .mims-pagination .page-item .page-link {
   margin-right: 10px;
