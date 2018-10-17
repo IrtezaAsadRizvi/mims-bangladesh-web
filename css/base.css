@@ -27,7 +27,7 @@
 
   --social-links-color: #87898C;
   --light-border-color: #e1e1e1;
-  --lighter-border-color: #ededed;
+  --lighter-border-color: #f1f1f1;
 
   --font-regular: 'Proxima Nova', Georgia, sans-serif;
   --font-light: 'proxima_nova_ltthin', Georgia, sans-serif;
@@ -159,7 +159,7 @@ body {
   font-size: var(--font-size-medium);
   padding: 10px 30px !important;
 }
-.mims-nav-link.home {
+.mims-nav-link.home-link {
   margin-left: 120px !important;
 }
 .mims-nav-link.active {
@@ -222,7 +222,7 @@ body {
   .mims-nav-link {
     padding: 5px 0 !important;
   }
-  .mims-nav-link.home {
+  .mims-nav-link.home-link {
     margin-left: 0 !important;
   }
   .left-links, .right-links {
@@ -659,7 +659,6 @@ body {
 /* jobs */
 /* --------------------------------------------- */
 .job {
-  border-bottom: 1px solid var(--light-border-color);
   padding: 10px 24px;
   cursor: pointer;
   position: relative;
@@ -741,7 +740,6 @@ body {
 /* news */
 /* --------------------------------------------- */
 .news {
-  border-bottom: 1px solid var(--light-border-color);
   padding: 20px 16px;
   cursor: pointer;
   position: relative;
@@ -1300,9 +1298,7 @@ body {
 /* --------------------------------------------- */
 /* Doctors */
 /* --------------------------------------------- */
-.doctor-list {
-  
-}
+
 .doctor {
   margin-top: 15px;
   background-color: #fff;
@@ -1332,6 +1328,71 @@ body {
 }
 .doctor-info-description {
   font-size: var(--font-size-text);
+}
+
+/* --------------------------------------------- */
+/* special report details */
+/* --------------------------------------------- */
+.news-details {
+  padding: 16px 30px;
+}
+.news-details .news-title {
+  font-size: 30px;
+  font-family: var(--font-regular);
+  margin-bottom: 10px;
+} 
+.news-details .news-post-date {
+  font-size: var(--font-size-text);
+  color: var(--text-color-light-gray);
+  font-family: var(--font-medium);
+  margin-bottom: 10px;
+}
+.news-details .news-post-date span {
+  color: var(--title-color);
+}
+.news-details .news-banner{
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+.news-details .news-author {
+  margin-top: 30px;
+  font-size: var(--font-size-regular);
+  margin-bottom: 20px;
+}
+.news-details .news-description {
+  color: var(--title-color);
+  font-size: var(--font-size-regular);
+  margin-bottom: 20px;
+}
+.news-details .news-detais-footer {
+  border-top: 1px solid var(--lighter-border-color);
+  padding-top: 20px;
+}
+.news-details .news-source {
+  font-size: var(--font-size-text);
+  font-family: var(--font-medium);
+  color: var(--text-color-light-gray);
+}
+.news-details .news-source span {
+  color: var(--theme-color-primary);
+}
+.news-detais-footer .share-btn {
+  color: var(--theme-color-primary);
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.news-detais-footer .share-btn:hover, .news-detais-footer .share-btn:active {
+  color: var(--theme-color-primary);
+}
+#shareLinksCollapse {
+  text-align: right;
+  padding-top: 16px;
+}
+#shareLinksCollapse .side-link {
+  font-size: 20px;
 }
 
 /* --------------------------------------------- */
@@ -1375,7 +1436,7 @@ body {
 footer {
   background-color: var(--footer-bg);
   padding: 10px 0;
-  margin-top: 16px;
+  margin-top: 60px;
 }
 footer p {
   color: var(--text-color-white);
