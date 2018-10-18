@@ -1330,8 +1330,37 @@ body {
   font-size: var(--font-size-text);
 }
 
+
 /* --------------------------------------------- */
-/* special report details */
+/* news list */
+/* --------------------------------------------- */
+.news-list {
+  margin-top: 30px;
+}
+.news-item {
+  padding: 30px;
+  margin-bottom: 15px;
+  background-color: var(--section-bg);
+  border-radius: 4px;
+  box-shadow: var(--section-box-shadow);
+}
+.news-item .news-thumb {
+  padding-left: 0;
+}
+.news-item .news-thumb img{
+  width: 100%;
+  height: auto;
+}
+.news-item .news-info .news-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.news-item .news-info .read-more {
+  color: var(--text-color);
+}
+
+/* --------------------------------------------- */
+/* news details */
 /* --------------------------------------------- */
 .news-details {
   padding: 16px 30px;
