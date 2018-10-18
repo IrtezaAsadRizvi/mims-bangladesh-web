@@ -1355,6 +1355,9 @@ body {
   margin-top: 0;
   margin-bottom: 15px;
 }
+.news-item .news-info .news-summary [
+  color: var(--text-color);
+]
 .news-item .news-info .read-more {
   color: var(--text-color);
 }
