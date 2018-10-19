@@ -1,4 +1,5 @@
 $(function() {
+
 	// phone nav buttons (close one when the other one is triggered)
 	$('#navbarMenuButton').click(function(){
 		$('#navbarSearch').collapse('hide')
@@ -19,8 +20,6 @@ $(function() {
 			$('.alphabets').addClass('hide')
 		}
 	});
-
-
 
 	// home product slider
 	$('#home-product-slider').slick({
@@ -69,7 +68,6 @@ $(function() {
 	});
 
 	
-
 
 	// end of ui.js
 });
