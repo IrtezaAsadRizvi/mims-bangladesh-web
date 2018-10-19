@@ -466,12 +466,29 @@ body {
   overflow: hidden;
   margin-top: 30px;
 }
+.in-page-advert {
+  height: 130px;
+  width: 100%;
+  margin-top: 30px;
+}
+.in-page-advert.side-col {
+  height: auto;
+}
+.in-page-advert img{
+  height: 100%;
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
   .advert-container {
     padding: 0 15px;
   }
   .advert img{
     margin-top: 16px;
+  }
+  .in-page-advert {
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
   }
 }
 
