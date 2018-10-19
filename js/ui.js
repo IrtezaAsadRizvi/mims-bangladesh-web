@@ -67,4 +67,9 @@ $(function() {
 
 		viewer.show(imgSrc, highResolutionImage);
 	});
+
+	
+
+
+	// end of ui.js
 });

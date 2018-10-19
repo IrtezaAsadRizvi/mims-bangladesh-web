@@ -3,8 +3,9 @@
 * [done]alphabets hover state would be theme-green
 * alphabets in mobile view should be in a collapsible/ seperate dive and appear accordingly 
 * [done]home > drug update > items should be links
-* inner page > side column > news/special reports spacing fix
-* inner page > filter tags > clicked tag should stay selected
+* [done]inner page > side column > news/special reports spacing fix
+* [done]inner page > filter tags > clicked tag should stay selected
+* [done]inner page > filter tags > gaps between visible tags and collapsed tags should be less.
 * all the links should dummy point
 * [done]inner page > top advert spacing fix
 * table item slightly moves on hover
