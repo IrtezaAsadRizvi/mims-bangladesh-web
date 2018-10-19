@@ -101,6 +101,7 @@ body {
   font-size: 10px;
   color: var(--text-color-light-gray);
 }
+
 @media screen and (max-width: 768px) {
   .theme-select select {
     padding: 10px 16px; 
@@ -132,6 +133,20 @@ body {
     padding: 10px 16px; 
   }
 }
+
+.see-more-btn{
+  color: var(--text-color);
+}
+.side-col-see-more-btn {
+  display: block;
+  color: var(--text-color);
+  margin: 0px 15px 30px 15px;
+}
+.side-col-see-more-btn:hover, .side-col-see-more-btn:focus, .side-col-see-more-btn:active {
+  text-decoration: none;
+  color: var(--sub-title-color);
+}
+
 /* --------------------------------------------- */
 /* navigation */
 /* --------------------------------------------- */
@@ -729,6 +744,10 @@ body {
 .job-company {
   color: var(--text-color);
 }
+.job-company.side-col {
+  color: var(--text-color);
+  font-size: var(--font-size-text);
+}
 
 @media screen and (max-width: 768px) {
   .job {
@@ -784,11 +803,14 @@ body {
   margin-top: 0;
 }
 .news-title.side-col {
-  font-size: 18px;
+  font-size: var(--font-size-medium);
   font-family: var(--font-bold);
 }
 .news-description {
   color: var(--text-color);
+}
+.news-description.side-col {
+  font-size: var(--font-size-text);
 }
 
 @media screen and (max-width: 768px) {
@@ -903,7 +925,8 @@ body {
   font-family: var(--font-medium);
 }
 .address a {
-  color: var(--title-color)
+  color: var(--title-color);
+  font-size: var(--font-size-medium);
 }
 .address:hover a {
   color: var(--theme-color-primary);
@@ -918,9 +941,7 @@ body {
   border-radius: 50%;
   margin-right: 16px;
 }
-.address-list .see-more-btn{
-  color: var(--text-color);
-}
+
 @media screen and (max-width: 768px) {
   .address-list {
     padding-left: 16px;
@@ -1615,6 +1636,9 @@ body {
 .mims-pagination {
   margin-top: 16px;
 }
+.mims-pagination ul.pagination {
+  margin-bottom: 0;
+}
 .mims-pagination .page-item .page-link {
   margin-right: 10px;
   border-radius: 4px;
@@ -1633,6 +1657,9 @@ body {
 }
 .mims-pagination .page-item .page-link:hover {
   color: var(--theme-color-primary);
+}
+.mims-pagination .page-item.active .page-link:hover {
+  color: var(--text-color-white);
 }
 .mims-pagination .page-item .page-link.next, .mims-pagination .page-item .page-link.prev {
   height: 48px;
