@@ -1,0 +1,10 @@
+* nav links should be bold
+* alphabets should only show for brand and generic (home, brand-index, brand details)
+* alphabets hover state would be theme-green
+* alphabets in mobile view should be in a collapsible/ seperate dive and appear accordingly 
+* home > drug update > items should be links
+* inner page > side column > news/special reports spacing fix
+* inner page > filter tags > clicked tag should stay selected
+* all the links should dummy point
+* inner page > top advert spacing fix
+* table item slightly moves on hover
