@@ -11,8 +11,16 @@ $(function() {
 	$(".search-tabs li").click(function(e) {
 	  e.preventDefault();
 	  $(".search-tabs li").removeClass("active");
-	  $(this).addClass("active");
+		$(this).addClass("active");
+		
+		if($(this).hasClass('brand') || $(this).hasClass('generic')) {
+			$('.alphabets').removeClass('hide')
+		} else {
+			$('.alphabets').addClass('hide')
+		}
 	});
+
+
 
 	// home product slider
 	$('#home-product-slider').slick({
