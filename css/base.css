@@ -253,7 +253,6 @@ body {
 .bread-crumb a:last-child {
   color: var(--text-color);
   font-size: var(--font-size-text);
-  text-transform: uppercase;
   pointer-events: none;
 }
 .bread-crumb a:last-child i {
@@ -966,6 +965,10 @@ body {
 .brand-generic-table tr {
   cursor: pointer;
 }
+.brand-generic-table.brand-of-generic tr, .brand-generic-table.brand-of-generic th {
+  font-size: var(--font-size-text);
+  padding-left: 8px;
+}
 .brand-generic-table tr:hover {
   color: var(--theme-color-primary);
   /* font-family: var(--font-medium); */
@@ -990,6 +993,66 @@ body {
   }
   .brand-generic-table td {
     font-size: var(--font-size-text)
+  }
+}
+
+/* --------------------------------------------- */
+/* brand genereic details */
+/* --------------------------------------------- */
+.brand-details {
+  padding: 16px 30px;
+}
+.brand-details .brand-title {
+  font-size: 30px;
+  font-family: var(--font-regular);
+  margin-bottom: 15px;
+} 
+.brand-details .brand-description {
+  color: var(--title-color);
+  font-size: var(--font-size-text);
+}
+.brand-details .brand-description-point {
+  padding-left: 24px;
+  position: relative;
+}
+.brand-details .brand-description-point::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--theme-color-primary);
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.brand-details .brand-description-title {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-family: var(--font-medium);
+}
+.brand-info-table {
+  margin-top: 20px;
+}
+.brand-info-table td {
+  border: none !important;
+  font-size: var(--font-size-text);
+  text-align: left;
+  padding: 5px 0;
+}
+.brand-info-table td.brand-info-title {
+  color: var(--title-color);
+  font-family: var(--font-medium);
+  width: 20%;
+}
+@media screen and (max-width: 768px) {
+  .brand-details .brand-title {
+    font-size: var(--font-size-medium);
+    font-family: var(--font-medium);
+    margin-bottom: 12px;
+  }
+  .brand-info-table td.brand-info-title {
+    width: auto;
   }
 }
 
@@ -1483,6 +1546,50 @@ body {
 }
 
 /* --------------------------------------------- */
+/* about mims */
+/* --------------------------------------------- */
+.about-mims {
+  margin-top: 30px;
+  background-color: var(--section-bg);
+  border-radius: 4px;
+  box-shadow: var(--section-box-shadow);
+}
+.about-content {
+  padding: 30px 15px;
+}
+.about-header {
+  font-family: var(--font-medium);
+  color: var(--sub-title-color);
+  margin-bottom: 20px;
+  font-size: var(--font-size-header);
+}
+.about-text {
+  font-size: var(--font-size-medium);
+  color: var(--sub-title-color);
+  margin-bottom: 20px;
+}
+.about-img {
+  padding: 30px 15px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .about-mims {
+    margin-top: 10px;
+  }
+  .about-content {
+    padding: 16px;
+  }
+  .about-header {
+    font-size: var(--font-size-medium);
+    margin-bottom: 15px;
+  }
+  .about-text {
+    font-size: var(--font-size-text);
+    margin-bottom: 15px;
+  }
+}
+
+/* --------------------------------------------- */
 /* pagination */
 /* --------------------------------------------- */
 .mims-pagination {
@@ -1515,6 +1622,9 @@ body {
 }
 .mims-pagination .page-item .page-link.next i, .mims-pagination .page-item .page-link.prev i {
   font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+
 }
 
 /* --------------------------------------------- */
