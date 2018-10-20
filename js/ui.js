@@ -20,6 +20,14 @@ $(function() {
 			$('.alphabets').addClass('hide')
 		}
 	});
+	// search radio in nav
+	$('input[name="search-category"]').click(function(){
+		if($(this).val() === 'brand' || $(this).val() === 'generic') {
+			$('.alphabets').removeClass('remove')
+		} else {
+			$('.alphabets').addClass('remove')
+		}
+	})
 
 	// home product slider
 	$('#home-product-slider').slick({

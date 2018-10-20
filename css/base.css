@@ -429,8 +429,23 @@ body {
   margin-top: 16px;
   visibility: visible;
 }
+.alphabets.nav-aldphabets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.alphabets.nav-aldphabets:last-of-type {
+  justify-content: left;
+}
+.alphabets.nav-aldphabets .alphabet-link {
+  color: var(--theme-color-primary);
+  width: 7vw;
+}
 .alphabets.hide {
   visibility: hidden;
+}
+.alphabets.remove {
+  display: none;
 }
 .alphabet-link {
   color: var(--text-color-white);
