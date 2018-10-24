@@ -522,7 +522,7 @@ body {
     padding: 0 15px;
   }
   .advert img{
-    margin-top: 16px;
+    margin-top: 6px;
   }
   .in-page-advert {
     height: auto;
@@ -620,7 +620,7 @@ body {
   }
   .section-col {
     border-bottom: 1px solid var(--light-border-color);
-    padding: 0;
+    padding: 16px;
     padding-bottom: 50px;
   }
   .section-col h4 {
@@ -929,8 +929,8 @@ body {
 }
 @media screen and (max-width: 768px) {
   .home-news-slider-container {
-    margin-top: 10px;
-    padding: 10px 0;
+    margin-top: 0;
+    padding: 0;
   }
   .home-news-slider-wrapper {
     position: relative;
@@ -982,6 +982,7 @@ body {
   .address-list {
     padding-left: 16px;
     padding-bottom: 20px;
+    margin-bottom: 15px;
   }
   .address {
     margin: 7px 0px 7px 0px;
@@ -1024,9 +1025,13 @@ body {
 @media screen and (max-width: 768px) {
   .bottom-quote-secton {
     margin-top: 0px;
+    margin-bottom: 60px;
   }
   .quote {
-    margin-bottom: 16px;
+    margin-bottom: 15px;
+  }
+  .quote img {
+    box-shadow: var(--section-box-shadow);
   }
 }
 
