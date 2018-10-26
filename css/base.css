@@ -1208,10 +1208,11 @@ thead {
   font-size: var(--font-size-text);
   text-align: left;
   padding: 7px 0;
+  font-family: var(--font-medium);
 }
 .job-info-table td.job-info-title {
   color: var(--title-color);
-  font-family: var(--font-medium);
+  font-family: var(--font-regular);
 }
 .job-details .job-circular-image {
   text-align: center;
