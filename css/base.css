@@ -931,7 +931,7 @@ thead {
 .home-news-slide-title {
   font-family: var(--font-medium);
   color: var(--title-color);
-  margin-top: 16px;
+  margin: 16px 6px;
 }
 /* custom slick arrows */
 .slick-prev.slick-arrow:before, .slick-next.slick-arrow:before {
