@@ -654,7 +654,7 @@ thead {
   .section-col h4 {
     margin-bottom: 10px !important;
     text-align: left;
-    padding: 16px;
+    padding: 16px 0;
     margin-top: 16px;
   }
   .section-col p {
@@ -1793,6 +1793,7 @@ footer p {
 }
 .footer-logo.logo-top {
   display: none;
+  margin-bottom: 20px;
 }
 footer p .dev-logo {
   height: 36px;
