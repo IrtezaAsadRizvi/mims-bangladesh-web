@@ -841,6 +841,9 @@ thead {
 .news.home-news {
   padding: 18px 16px;
 }
+.news.home-news .news-title{
+  line-height: 1.2em;
+}
 .news:hover .news-title {
   color: var(--theme-color-primary);
 }
@@ -1547,9 +1550,15 @@ thead {
 .news-item .news-info .news-title {
   margin-top: 0;
   margin-bottom: 15px;
+  line-height: 1.2em;
+}
+.news-item .news-info .news-title:hover {
+  text-decoration: none;
+  color: var(--theme-color-primary);
 }
 .news-item .news-info .news-summary {
   color: var(--text-color);
+  margin-top: 15px;
 }
 .news-item .news-info .read-more {
   color: var(--text-color);
