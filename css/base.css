@@ -522,7 +522,7 @@ body {
     padding: 0 15px;
   }
   .advert img{
-    margin-top: 6px;
+    margin-top: 15px;
   }
   .in-page-advert {
     height: auto;
@@ -598,6 +598,9 @@ body {
   font-size: var(--font-size-regula);
   color: var(--text-color);
   margin-bottom: 10px;
+}
+.section-col a:hover {
+  color: var(--theme-color-primary);
 }
 
 @media screen and (max-width: 768px) {
