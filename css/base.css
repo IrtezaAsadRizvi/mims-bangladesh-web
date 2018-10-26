@@ -19,6 +19,7 @@
   --text-color: #868686;
   --text-color-white: #ffffff;
   --text-color-light-gray: #9b9b9b;
+  --th-color: #eeeeee;
 
   --body-bg: #f1f1f1;
   --section-bg: #ffffff;
@@ -27,6 +28,7 @@
   --disabled-btn-bg: #d1d1d1;
 
   --social-links-color: #87898C;
+  --medium-border-color: #dddddd;
   --light-border-color: #e1e1e1;
   --lighter-border-color: #f1f1f1;
 
@@ -46,6 +48,9 @@ body {
   background-color: var(--body-bg);
   font-family: var(--font-regular);
 }
+thead {
+  background-color: #eeeeee;
+}
 @media screen and (max-width: 768px) {
 }
 
@@ -57,7 +62,7 @@ body {
   box-shadow: none;
 }
 .bb-lighter {
-  border-bottom: 1px solid var(--lighter-border-color);
+  border-bottom: 1px solid var(--medium-border-color);
 }
 .theme-btn {
   background-color: var(--theme-color-primary);
@@ -66,6 +71,12 @@ body {
 }
 .gallery-items {
   cursor: zoom-in;
+}
+.component-wrapper {
+  background-color: var(--section-bg);
+  box-shadow: var(--section-box-shadow);
+  border-radius: 4px;
+  padding: 16px 24px;
 }
 
 /* --------------------------------------------- */
@@ -746,6 +757,7 @@ body {
 }
 .job.side-col .job-title {
   font-size: var(--font-size-medium);
+  line-height: 1.2em;
 }
 .job .right-arrow {
   display: none;
@@ -854,6 +866,7 @@ body {
 .news-title.side-col {
   font-size: var(--font-size-medium);
   font-family: var(--font-bold);
+  line-height: 1.2em;
 }
 .news-description {
   color: var(--text-color);
@@ -1088,7 +1101,7 @@ body {
 }
 .brand-generic-table td {
   border: none;
-  border-top: 1px solid var(--lighter-border-color);
+  border-top: 1px solid var(--medium-border-color);
 }
 @media screen and (max-width: 768px) {
   .brand-generic-table {
@@ -1440,13 +1453,13 @@ body {
   font-size: var(--font-size-text);
   font-family: var(--font-bold);
   border: none;
-  border-bottom: 1px solid var(--lighter-border-color);
+  border-bottom: 1px solid var(--medium-border-color);
 }
 .address-table table td {
   border: none;
   color: var(--title-color);
   font-size: var(--font-size-text);
-  border-bottom: 1px solid var(--lighter-border-color);
+  border-bottom: 1px solid var(--medium-border-color);
   padding-top: 16px;
   padding-bottom: 16px;
 }
