@@ -857,7 +857,7 @@ thead {
   height: auto;
   max-height: 150px;
   margin: 0 auto;
-  padding-top: 14px;
+  padding-top: 5px;
 }
 .news-title {
   font-size: var(--font-size-header);
