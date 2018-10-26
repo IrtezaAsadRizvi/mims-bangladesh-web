@@ -246,7 +246,7 @@ thead {
     border-bottom: 1px solid var(--light-border-color);
   }
   .navbar-brand-centered {
-    top: 10px;
+    top: 15px;
     left: calc(50% - 33px);
   }
   .menu-btn {
