@@ -19,6 +19,7 @@
   --text-color: #868686;
   --text-color-white: #ffffff;
   --text-color-light-gray: #9b9b9b;
+  --th-color: #eeeeee;
 
   --body-bg: #f1f1f1;
   --section-bg: #ffffff;
@@ -27,6 +28,7 @@
   --disabled-btn-bg: #d1d1d1;
 
   --social-links-color: #87898C;
+  --medium-border-color: #dddddd;
   --light-border-color: #e1e1e1;
   --lighter-border-color: #f1f1f1;
 
@@ -46,6 +48,9 @@ body {
   background-color: var(--body-bg);
   font-family: var(--font-regular);
 }
+thead {
+  background-color: #eeeeee;
+}
 @media screen and (max-width: 768px) {
 }
 
@@ -57,7 +62,7 @@ body {
   box-shadow: none;
 }
 .bb-lighter {
-  border-bottom: 1px solid var(--lighter-border-color);
+  border-bottom: 1px solid var(--medium-border-color);
 }
 .theme-btn {
   background-color: var(--theme-color-primary);
@@ -66,6 +71,12 @@ body {
 }
 .gallery-items {
   cursor: zoom-in;
+}
+.component-wrapper {
+  background-color: var(--section-bg);
+  box-shadow: var(--section-box-shadow);
+  border-radius: 4px;
+  padding: 16px 24px;
 }
 
 /* --------------------------------------------- */
@@ -182,8 +193,11 @@ body {
 .mims-nav-link.home-link {
   margin-left: 120px !important;
 }
+.mims-nav-link:hover {
+  color: var(--theme-color-primary) !important;
+}
 .mims-nav-link.active {
-  color: var(--brand-color) !important;
+  color: var(--theme-color-primary) !important;
 }
 .left-links, .right-links {
   position: absolute;
@@ -232,7 +246,7 @@ body {
     border-bottom: 1px solid var(--light-border-color);
   }
   .navbar-brand-centered {
-    top: 10px;
+    top: 15px;
     left: calc(50% - 33px);
   }
   .menu-btn {
@@ -357,7 +371,7 @@ body {
   text-decoration: none;
   color: var(--section-bg);
   font-size: var(--font-size-medium);
-  font-family: var(--font-light);
+  font-family: var(--font-regular);
   -webkit-border-top-left-radius: 7px;
   -webkit-border-top-right-radius: 7px;
   -moz-border-radius-topleft: 7px;
@@ -570,7 +584,6 @@ body {
   background-color: var(--section-bg);
   padding: 24px;
   margin-top: 30px;
-  height: 100%;
   max-height: 430px;
   border-radius: 4px;
   box-shadow: var(--section-box-shadow);
@@ -664,7 +677,7 @@ body {
   .section-col h4 {
     margin-bottom: 10px !important;
     text-align: left;
-    padding: 16px;
+    padding: 16px 0;
     margin-top: 16px;
   }
   .section-col p {
@@ -767,6 +780,7 @@ body {
 }
 .job.side-col .job-title {
   font-size: var(--font-size-medium);
+  line-height: 1.2em;
 }
 .job .right-arrow {
   display: none;
@@ -850,6 +864,9 @@ body {
 .news.home-news {
   padding: 18px 16px;
 }
+.news.home-news .news-title{
+  line-height: 1.2em;
+}
 .news:hover .news-title {
   color: var(--theme-color-primary);
 }
@@ -863,7 +880,7 @@ body {
   height: auto;
   max-height: 150px;
   margin: 0 auto;
-  padding-top: 14px;
+  padding-top: 5px;
 }
 .news-title {
   font-size: var(--font-size-header);
@@ -875,6 +892,7 @@ body {
 .news-title.side-col {
   font-size: var(--font-size-medium);
   font-family: var(--font-bold);
+  line-height: 1.2em;
 }
 .news-description {
   color: var(--text-color);
@@ -936,7 +954,7 @@ body {
 .home-news-slide-title {
   font-family: var(--font-medium);
   color: var(--title-color);
-  margin-top: 16px;
+  margin: 16px 6px;
 }
 /* custom slick arrows */
 .slick-prev.slick-arrow:before, .slick-next.slick-arrow:before {
@@ -1001,7 +1019,8 @@ body {
 /* --------------------------------------------- */
 .address-list {
   padding-left: 30px;
-  margin-bottom: 34px;
+  padding-bottom: 37px;
+  margin-bottom: 0;
 }
 .address {
   list-style: none;
@@ -1108,7 +1127,7 @@ body {
 }
 .brand-generic-table td {
   border: none;
-  border-top: 1px solid var(--lighter-border-color);
+  border-top: 1px solid var(--medium-border-color);
 }
 @media screen and (max-width: 768px) {
   .brand-generic-table {
@@ -1212,10 +1231,11 @@ body {
   font-size: var(--font-size-text);
   text-align: left;
   padding: 7px 0;
+  font-family: var(--font-medium);
 }
 .job-info-table td.job-info-title {
   color: var(--title-color);
-  font-family: var(--font-medium);
+  font-family: var(--font-regular);
 }
 .job-details .job-circular-image {
   text-align: center;
@@ -1460,13 +1480,13 @@ body {
   font-size: var(--font-size-text);
   font-family: var(--font-bold);
   border: none;
-  border-bottom: 1px solid var(--lighter-border-color);
+  border-bottom: 1px solid var(--medium-border-color);
 }
 .address-table table td {
   border: none;
   color: var(--title-color);
   font-size: var(--font-size-text);
-  border-bottom: 1px solid var(--lighter-border-color);
+  border-bottom: 1px solid var(--medium-border-color);
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -1554,9 +1574,15 @@ body {
 .news-item .news-info .news-title {
   margin-top: 0;
   margin-bottom: 15px;
+  line-height: 1.2em;
+}
+.news-item .news-info .news-title:hover {
+  text-decoration: none;
+  color: var(--theme-color-primary);
 }
 .news-item .news-info .news-summary {
   color: var(--text-color);
+  margin-top: 15px;
 }
 .news-item .news-info .read-more {
   color: var(--text-color);
@@ -1790,6 +1816,7 @@ footer p {
 }
 .footer-logo.logo-top {
   display: none;
+  margin-bottom: 20px;
 }
 footer p .dev-logo {
   height: 36px;
