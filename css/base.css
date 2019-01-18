@@ -282,6 +282,29 @@ body {
 }
 
 /* --------------------------------------------- */
+/* pop up */
+/* --------------------------------------------- */
+.pop-up .pop-up-primary-btn{
+  background-color: var(--theme-color-primary);
+  border-color: var(--theme-color-primary);
+}
+.pop-up .pop-up-primary-btn:hover,.pop-up .pop-up-primary-btn:active {
+  outline: none;
+  box-shadow: none;
+  background-color: var(--theme-color-primary);
+}
+.pop-up .pop-up-secondary-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--text-color-light-gray);
+}
+.pop-up .pop-up-secondary-btn:hover,.pop-up .pop-up-secondary-btn:active {
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  text-decoration: underline;
+}
+/* --------------------------------------------- */
 /* banner */
 /* --------------------------------------------- */
 .banner {
